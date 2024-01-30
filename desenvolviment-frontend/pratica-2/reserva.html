@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva de viagem</title>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>Dados pessoais</legend>
+
+            <label for="nome">Nome</label> <br />
+            <input type="text" name="nome" id="nome" required /> <br />
+
+            <br />
+
+            <label for="email">Email</label> <br />
+            <input type="email" name="email" id="email" required /> <br />
+        </fieldset>
+
+        <br />
+
+        <fieldset>
+            <legend>Dados da reserva</legend>
+
+            <span>Serviços desejados</span>
+
+            <br />
+
+            <label>
+                <input type="checkbox" name="compra-passagem" />
+                Compra de passagens
+            </label>
+
+            <br />
+
+            <label>
+                <input type="checkbox" name="reserva-hospedagem" />
+                Reserva de hospedagem
+            </label>
+
+            <br />
+
+            <label>
+                <input type="checkbox" name="aluguel-veiculos" />
+                Aluguel de veículos
+            </label>
+        </fieldset>
+
+        <br />
+
+        <fieldset>
+            <legend>Dados de pagamento</legend>
+
+            <span>Forma de pagamento</span>
+
+            <br />
+
+            <label>
+                <input type="radio" name="forma-pagamento" />
+                Cartão de crédito
+            </label>
+
+            <br />
+
+            <label>
+                <input type="radio" name="forma-pagamento" />
+                Boleto
+            </label>
+
+            <br />
+
+            <label>
+                <input type="radio" name="forma-pagamento" checked />
+                PIX
+            </label>
+
+            <br /> <br />
+
+            <span>Prazo de pagamento</span>
+
+            <br />
+
+            <select name="prazo-pagamento">
+                <option value="a-vista">À Vista</option>
+                <option value="cinco-vezes">Cinco vezes sem juros</option>
+                <option value="dez-vezes">Dez vezes com juros</option>
+            </select>
+        </fieldset>
+
+        <br />
+
+        <input type="submit" value="ENVIAR" />
+    </form>
+</body>
+
+</html>
