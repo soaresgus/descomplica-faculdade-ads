@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão de funcionários</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <form>
+        <label>Nome</label> <br />
+        <input type="text" id="nome" required> <br /> <br />
+
+        <label>Idade</label> <br />
+        <input type="number" id="idade" required> <br /> <br />
+
+        <label>Cargo</label> <br />
+        <select id="cargo">
+            <option value="desenvolvedor" selected>Desenvolvedor</option>
+            <option value="gerente">Gerente</option>
+        </select> <br /> <br />
+
+        <button type="button" onclick="enviar()">Criar</button>
+
+        <div id="resultado" class="invisivel">
+            <span>Nome: </span><span id="nome-resultado"></span> <br /> <br />
+            <span>Idade: </span><span id="idade-resultado"></span> <br /> <br />
+            <span>Cargo: </span><span id="cargo-resultado"></span> <br /> <br />
+
+            <button type="button" onclick="apresentar()">Apresentar-se</button> <br /> <br />
+            <button type="button" onclick="trabalhar()">Trabalhar</button> <br /> <br />
+
+            <div class="desenvolvedor">
+                <span>Linguagem de programação: </span><span id="linguagem-resultado"></span> <br /> <br />
+                <button type="button" onclick="programar()">Programar</button> <br /> <br />
+            </div>
+
+            <div class="gerente">
+                <span>Departamento: </span><span id="departamento-resultado"></span> <br /> <br />
+                <button type="button" onclick="gerenciar()">Gerenciar</button> <br /> <br />
+            </div>
+        </div>
+
+    </form>
+</body>
+
+</html>
